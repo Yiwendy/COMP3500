@@ -1,0 +1,40 @@
+1. What happens to a thread when it exits (i.e., calls thread_exit() )? What about when it sleeps?
+
+When a thread exits, it first check the stack was not blown out then turn off interrupts. Next destroy its virtual memory space, the threads address space and vnode. Finally decrement the number of threads, puts intself into a zombie state and perform a context switch. When a thread sleeps, it makes sure it's not in an interrupt handler, starts taking control once more when wakeup() is called on its address.
+
+2. What function(s) handle(s) a context switch?
+mi_switch  md_switch
+
+3. How many thread states are there? What are they?
+
+Four thread states: run, ready, sleep, and zombie.
+
+4. What does it mean to turn interrupts off? How is this accomplished? Why is it important to turn off interrupts in the thread subsystem code?
+
+Turning interrupts off means the thread running can not be interrupted by anything, including the OS. If interrupts are turned off, then even if an interrupt is signaled the handler is not called until interrupts are turned back on. This is accomplished using the splhigh function provided in spl.h. It’s important for it ensure that these operations complete successfully and are not broken while executing.
+
+5. What happens when a thread wakes up another thread? How does a sleeping thread get to run again?
+
+When a thread is being woken up, It removes the sleeping thread from the queue, and calls make_runnable on the thread, and adds it to the end of the runqueue. The thread will be runnable again when mi_switch is called and then the thread is returned to the scheduler.
+
+6. What function is responsible for choosing the next thread to run?
+
+
+ The scheduler function.
+
+7. How does that function pick the next thread?
+
+It uses a round robin algorithm so that each thread in the queue gets equal time running without priority.
+
+8. What role does the hardware timer play in scheduling? What hardware independent function is called on a timer interrupt?
+
+The interrupt handler for hardware timer calls hardclock. The hardclock method finishes by calling thread_yield every time it runs, forcing a context switch.
+
+9. Describe how thread_sleep() and thread_wakeup() are used to implement semaphores. What is the purpose of the argument passed to thread_sleep()?
+
+Thread_sleep is used in the wait function of the semaphore. Thread_wakeup is used in the signal function of the seaphore. These two functions are used to control multiple threads that are trying to access a shared resource. Thread_sleep associates that address with the sleeping thread. Thread_wakeup uses that address to find the threads, associated with that address and only wake up those. It can wakeup one thread at a time to use the shared variable and have the others sleep. 
+
+10. Why does the lock API in OS/161 provide lock_do_i_hold(), but not lock_get_holder()?
+
+Because locks have to be unlocked by the same thread that acquired them.
+
