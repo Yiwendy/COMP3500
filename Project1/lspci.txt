@@ -1,0 +1,10 @@
+Desktop
+Documents
+Fans
+appdata
+commands.script
+cpuinfo.txt
+interrupts.txt
+lspci.txt
+meminfo.txt
+ntuser.cmd
