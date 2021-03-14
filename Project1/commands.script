@@ -1,0 +1,138 @@
+Script started on Fri Jan 22 19:52:15 2021
+[?1034hbash-4.2$ man cd
+man: can't set the locale; make sure $LC_* and $LANG are correct
+[?1049h[?1h=BASH_BUILTINS(1)            General Commands Manual           BASH_BUILTINS(1)[m
+[m
+[1mNAME[0m[m
+       bash,  :,  .,  [, alias, bg, bind, break, builtin, caller, cd, command,[m
+       compgen, complete, compopt,  continue,  declare,  dirs,  disown,  echo,[m
+       enable,  eval,  exec, exit, export, false, fc, fg, getopts, hash, help,[m
+       history, jobs, kill, let, local, logout, mapfile, popd, printf,  pushd,[m
+       pwd,  read, readonly, return, set, shift, shopt, source, suspend, test,[m
+       times, trap, true, type, typeset, ulimit, umask, unalias, unset, wait -[m
+       bash built-in commands, see [1mbash[0m(1)[m
+[m
+[1mBASH[0m [1mBUILTIN[0m [1mCOMMANDS[0m[m
+       Unless otherwise noted, each builtin command documented in this section[m
+       as accepting options preceded by [1m-[0m accepts [1m--[0m to signify the end of the[m
+       options.   The  [1m:[0m, [1mtrue[0m, [1mfalse[0m, and [1mtest[0m builtins do not accept options[m
+       and do not treat [1m--[0m specially.  The [1mexit[0m, [1mlogout[0m, [1mbreak[0m, [1mcontinue[0m, [1mlet[0m,[m
+       and  [1mshift[0m builtins accept and process arguments beginning with [1m-[0m with-[m
+       out requiring [1m--[0m.  Other builtins that accept  arguments  but  are  not[m
+       specified  as accepting options interpret arguments beginning with [1m-[0m as[m
+       invalid options and require [1m--[0m to prevent this interpretation.[m
+       [1m:[0m [[4marguments[24m][m
+              No effect; the command does nothing beyond  expanding  [4marguments[24m[m
+              and  performing any specified redirections.  A zero exit code is[m
+[7m Manual page cd(1) line 1 (press h for help or q to quit)[27m[K[K[?1l>[?1049lbash-4.2$ cd Fan
+bash-4.2$ ped[K[Kwd
+/home/u1/wzf0009/Fan
+bash-4.2$ cd ~
+bash-4.2$ pew[K[Kew[K[Kwd
+/home/u1/wzf0009
+bash-4.2$ ls
+Desktop  Documents  Fan  appdata  commands.script  ntuser.cmd  test.script
+bash-4.2$ mkdir c[KFans
+bash-4.2$ ls
+Desktop    Fan	 appdata	  ntuser.cmd
+Documents  Fans  commands.script  test.script
+bash-4.2$ cp test.script /home/u1/wzfppp[K[K[K0009.[K/Fans
+bash-4.2$ cd Fans
+bash-4.2$ ls
+test.script
+bash-4.2$ cd c[K~
+bash-4.2$ mv move[K[K[K[Ktest [K.script ca[K[K[K /j[Khome/u1.e[K[K/wzf0009/Fan
+bash-4.2$ ls
+Desktop  Documents  Fan  Fans  appdata	commands.script  ntuser.cmd
+bash-4.2$ cd f[KFan
+bash-4.2$ ls
+test.script
+bash-4.2$ rm test.script
+bash-4.2$ ls
+bash-4.2$ cd ~
+bash-4.2$ red[K[Kmdir Fan
+bash-4.2$ ls
+Desktop  Documents  Fans  appdata  commands.script  ntuser.cmd
+bash-4.2$ r[Kcd Fans
+bash-4.2$ chomd[K[K[K[K[Kls
+test.script
+bash-4.2$ chomd[K[K[Kmod a+r test.script
+bash-4.2$ cd ~
+bash-4.2$ pwd
+/home/u1/wzf0009
+bash-4.2$ ce[Kla[Kear
+[3;J[H[2Jbash-4.2$ top
+[?1h=[?25l[H[2J(B[mtop - 19:56:32 up 150 days, 10:08, 20 users,  load average: 2.00, 2.06, 2.05(B[m[39;49m(B[m[39;49m[K
+Tasks:(B[m[39;49m[1m 643 (B[m[39;49mtotal,(B[m[39;49m[1m   3 (B[m[39;49mrunning,(B[m[39;49m[1m 637 (B[m[39;49msleeping,(B[m[39;49m[1m   2 (B[m[39;49mstopped,(B[m[39;49m[1m   1 (B[m[39;49mzombie(B[m[39;49m(B[m[39;49m[K
+%Cpu(s):(B[m[39;49m[1m 13.2 (B[m[39;49mus,(B[m[39;49m[1m  2.2 (B[m[39;49msy,(B[m[39;49m[1m  0.0 (B[m[39;49mni,(B[m[39;49m[1m 84.6 (B[m[39;49mid,(B[m[39;49m[1m  0.0 (B[m[39;49mwa,(B[m[39;49m[1m  0.0 (B[m[39;49mhi,(B[m[39;49m[1m  0.0 (B[m[39;49msi,(B[m[39;49m[1m  0.0 (B[m[39;49mst(B[m[39;49m(B[m[39;49m[K
+KiB Mem :(B[m[39;49m[1m 24508128 (B[m[39;49mtotal,(B[m[39;49m[1m  3523388 (B[m[39;49mfree,(B[m[39;49m[1m  8163724 (B[m[39;49mused,(B[m[39;49m[1m 12821016 (B[m[39;49mbuff/cache(B[m[39;49m(B[m[39;49m[K
+KiB Swap:(B[m[39;49m[1m 12386300 (B[m[39;49mtotal,(B[m[39;49m[1m  9625172 (B[m[39;49mfree,(B[m[39;49m[1m  2761128 (B[m[39;49mused.(B[m[39;49m[1m 15420908 (B[m[39;49mavail Mem (B[m[39;49m(B[m[39;49m[K
+[K
+[7m  PID USER      PR  NI    VIRT    RES    SHR S  %CPU %MEM     TIME+ COMMAND     (B[m[39;49m[K
+(B[m[1m30071 pzm0042   20   0  244520  55408  30128 R  81.0  0.2  73949:34 simv_gatel+ (B[m[39;49m[K
+(B[m[1m30088 pzm0042   20   0  244520  55408  30128 R  81.0  0.2  73949:01 simv_gatel+ (B[m[39;49m[K
+(B[m[1m27218 wzf0009   20   0  168988   2836   1624 R   9.5  0.0   0:00.07 top         (B[m[39;49m[K
+(B[m 1353 root      20   0   90568    108     60 S   4.8  0.0 123:02.51 rngd        (B[m[39;49m[K
+(B[m 4934 pzm0042   20   0 1300664 324492  87636 S   4.8  1.3   5360:11 pt_shell_e+ (B[m[39;49m[K
+(B[m    1 root      20   0  194420   6616   3476 S   0.0  0.0  40:48.70 systemd     (B[m[39;49m[K
+(B[m    2 root      20   0       0      0      0 S   0.0  0.0   0:05.32 kthreadd    (B[m[39;49m[K
+(B[m    4 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 kworker/0:+ (B[m[39;49m[K
+(B[m    6 root      20   0       0      0      0 S   0.0  0.0   0:20.24 ksoftirqd/0 (B[m[39;49m[K
+(B[m    7 root      rt   0       0      0      0 S   0.0  0.0   0:05.87 migration/0 (B[m[39;49m[K
+(B[m    8 root      20   0       0      0      0 S   0.0  0.0   0:00.00 rcu_bh      (B[m[39;49m[K
+(B[m    9 root      20   0       0      0      0 S   0.0  0.0  45:01.63 rcu_sched   (B[m[39;49m[K
+(B[m   10 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 lru-add-dr+ (B[m[39;49m[K
+(B[m   11 root      rt   0       0      0      0 S   0.0  0.0   1:57.17 watchdog/0  (B[m[39;49m[K
+(B[m   12 root      rt   0       0      0      0 S   0.0  0.0   0:29.74 watchdog/1  (B[m[39;49m[K
+(B[m   13 root      rt   0       0      0      0 S   0.0  0.0   0:03.54 migration/1 (B[m[39;49m[K
+(B[m   14 root      20   0       0      0      0 S   0.0  0.0   0:05.42 ksoftirqd/1 (B[m[39;49m[K[H(B[mtop - 19:56:35 up 150 days, 10:08, 20 users,  load average: 2.00, 2.06, 2.05(B[m[39;49m(B[m[39;49m[K
+
+%Cpu(s):(B[m[39;49m[1m 13.1 (B[m[39;49mus,(B[m[39;49m[1m  0.3 (B[m[39;49msy,(B[m[39;49m[1m  0.0 (B[m[39;49mni,(B[m[39;49m[1m 86.7 (B[m[39;49mid,(B[m[39;49m[1m  0.0 (B[m[39;49mwa,(B[m[39;49m[1m  0.0 (B[m[39;49mhi,(B[m[39;49m[1m  0.0 (B[m[39;49msi,(B[m[39;49m[1m  0.0 (B[m[39;49mst(B[m[39;49m(B[m[39;49m[K
+KiB Mem :(B[m[39;49m[1m 24508128 (B[m[39;49mtotal,(B[m[39;49m[1m  3523264 (B[m[39;49mfree,(B[m[39;49m[1m  8163848 (B[m[39;49mused,(B[m[39;49m[1m 12821016 (B[m[39;49mbuff/cache(B[m[39;49m(B[m[39;49m[K
+KiB Swap:(B[m[39;49m[1m 12386300 (B[m[39;49mtotal,(B[m[39;49m[1m  9625172 (B[m[39;49mfree,(B[m[39;49m[1m  2761128 (B[m[39;49mused.(B[m[39;49m[1m 15420784 (B[m[39;49mavail Mem (B[m[39;49m(B[m[39;49m[K
+[K
+
+(B[m[1m30088 pzm0042   20   0  244520  55408  30128 R 100.0  0.2  73949:04 simv_gatel+ (B[m[39;49m[K
+(B[m[1m30071 pzm0042   20   0  244520  55408  30128 R  99.7  0.2  73949:37 simv_gatel+ (B[m[39;49m[K
+(B[m 4934 pzm0042   20   0 1300664 324492  87636 S   9.6  1.3   5360:11 pt_shell_e+ (B[m[39;49m[K
+(B[m 3577 pzm0042   20   0 1896448 287488  62620 S   3.6  1.2   2402:42 common_she+ (B[m[39;49m[K
+(B[m 4639 gdm       20   0  747772  45352   1200 S   1.0  0.2   1053:54 gsd-color   (B[m[39;49m[K
+(B[m 8873 pzm0042   20   0  745992  41984    492 S   1.0  0.2 958:31.65 gsd-color   (B[m[39;49m[K
+(B[m 9386 pzm0042   20   0  422748  96540  43620 S   1.0  0.4 613:40.29 dve.exe     (B[m[39;49m[K
+(B[m 7983 pzm0042   20   0  672148  43708   1652 S   0.7  0.2 953:04.32 gsd-color   (B[m[39;49m[K
+(B[m15281 yzf0019   20   0   14.0g   4.0g  52576 S   0.7 17.2 600:56.70 virtuoso    (B[m[39;49m[K
+(B[m18135 pzm0042   20   0  423856  96768  43584 S   0.7  0.4 615:18.43 dve.exe     (B[m[39;49m[K
+(B[m19989 pzm0042   20   0  421188  94004  43456 S   0.7  0.4 584:39.19 dve.exe     (B[m[39;49m[K
+(B[m[1m27218 wzf0009   20   0  168956   2928   1672 R   0.7  0.0   0:00.09 top         (B[m[39;49m[K
+(B[m14648 yzf0019   20   0  651360  24076   2628 S   0.3  0.1 228:59.59 gsd-color   (B[m[39;49m[K
+(B[m18874 ces0171   20   0  658044  26236   1104 S   0.3  0.1 334:58.28 gsd-color   (B[m[39;49m[K
+(B[m23026 pzm0042   20   0   20676   1072    892 S   0.3  0.0  25:24.96 gam_server  (B[m[39;49m[K
+(B[m    1 root      20   0  194420   6616   3476 S   0.0  0.0  40:48.70 systemd     (B[m[39;49m[K
+(B[m    2 root      20   0       0      0      0 S   0.0  0.0   0:05.32 kthreadd    (B[m[39;49m[K[?1l>[25;1H
+[?12l[?25h[Kbash-4.2$ who
+pzm0042  pts/1        Dec  2 14:12 (:1)
+pzm0042  pts/0        Dec  2 14:15 (:1)
+ces0171  pts/2        Oct  7 18:28 (:3)
+yzf0019  pts/4        Nov 12 14:21 (:4)
+pzm0042  pts/3        Dec  2 14:23 (:1)
+pzm0042  pts/5        Dec  2 14:27 (:1)
+pzm0042  pts/6        Dec  2 14:28 (:1)
+pzm0042  pts/14       Dec  3 22:43 (:1)
+pzm0042  pts/7        Dec  2 16:18 (:1)
+pzm0042  pts/15       Dec  3 23:20 (:1)
+pzm0042  pts/17       Dec  3 23:43 (:1)
+pzm0042  pts/18       Dec  4 00:45 (:1)
+pzm0042  pts/19       Dec  4 00:25 (:1)
+pzm0042  pts/20       Dec  4 00:30 (:1)
+pzm0042  pts/21       Dec  4 00:46 (:1)
+pzm0042  pts/16       Dec  3 23:25 (:1)
+pzm0042  pts/22       Dec  4 00:52 (:1)
+pzm0042  pts/23       Dec  4 00:53 (:1)
+wzf0009  pts/24       Jan 22 19:37 (ettin.eng.auburn.edu)
+wzf0009  pts/25       Jan 22 19:52
+bash-4.2$ nproc
+16
+bash-4.2$ exit
+exit
+
+Script done on Fri Jan 22 19:57:24 2021
