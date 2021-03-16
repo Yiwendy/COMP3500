@@ -1,0 +1,284 @@
+Script started on Wed 10 Oct 2018 10:28:50 AM CDT
+[?1034hbash-4.2$ /.[K[K./sys161 kernel
+sys161: System/161 release 1.14, compiled Sep  4 2014 12:02:36
+
+OS/161 base system version 1.10
+Copyright (c) 2000, 2001, 2002, 2003
+   President and Fellows of Harvard College.  All rights reserved.
+
+Xiao Qin's system version 0 (ASST1 #7)
+Hello World!
+This is Dr. Qin's sample debug message for VM.
+
+Cpu is MIPS r2000/r3000
+1860k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+hardclock on ltimer0 (10000 hz)
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lser0 at lamebus0
+con0 at lser0
+pseudorand0 (virtual)
+
+OS/161 kernel [? for menu]: ?
+
+OS/161 kernel menu
+    [?o] Operations menu                [1c] Stoplight                      
+    [?t] Tests menu                     [kh] Kernel heap stats              
+    [1a] Cat/mouse with semaphores      [q] Quit and shut down              
+    [1b] Cat/mouse with locks and CVs   
+
+Operation took 0.061903320 seconds
+OS/161 kernel [? for menu]: 1b
+... Ken starting
+... Tick-Tock starting
+... Lura starting
+... Mickey starting
+... Greebo starting
+... Midge starting
+... Minnie starting
+... Morris starting
+    Mickey feels hungry
+>>> Mickey enters kitchen
+*** Mickey starts eating at dish 0
+    Greebo feels hungry
+    Morris feels hungry
+    Minnie feels hungry
+>>> Minnie enters kitchen
+*** Minnie starts eating at dish 1
+    Lura feels hungry
+    Ken feels hungry
+*** Mickey done eating at dish 0
+<<< Mickey leaves kitchen
+*** Minnie done eating at dish 1
+*** Minnie calls a cat turn
+<<< Minnie leaves kitchen
+    Tick-Tock feels hungry
+>>> Tick-Tock enters kitchen
+*** Tick-Tock starts eating at dish 0
+>>> Greebo enters kitchen
+*** Greebo starts eating at dish 1
+    Midge feels hungry
+*** Tick-Tock done eating at dish 0
+<<< Tick-Tock leaves kitchen
+*** Greebo done eating at dish 1
+<<< Greebo leaves kitchen
+>>> Morris enters kitchen
+*** Morris starts eating at dish 0
+>>> Lura enters kitchen
+*** Lura starts eating at dish 1
+    Mickey feels hungry
+    Tick-Tock feels hungry
+*** Morris done eating at dish 0
+<<< Morris leaves kitchen
+    Greebo feels hungry
+*** Lura done eating at dish 1
+*** Lura calls a mouse turn
+<<< Lura leaves kitchen
+    Minnie feels hungry
+>>> Minnie enters kitchen
+*** Minnie starts eating at dish 0
+>>> Mickey enters kitchen
+*** Mickey starts eating at dish 1
+*** Mickey done eating at dish 1
+<<< Mickey leaves kitchen
+*** Minnie done eating at dish 0
+*** Minnie calls a cat turn
+<<< Minnie leaves kitchen
+>>> Ken enters kitchen
+*** Ken starts eating at dish 0
+>>> Midge enters kitchen
+*** Midge starts eating at dish 1
+    Morris feels hungry
+*** Midge done eating at dish 1
+<<< Midge leaves kitchen
+*** Ken done eating at dish 0
+<<< Ken leaves kitchen
+    Lura feels hungry
+>>> Lura enters kitchen
+*** Lura starts eating at dish 0
+>>> Tick-Tock enters kitchen
+*** Tick-Tock starts eating at dish 1
+    Mickey feels hungry
+*** Tick-Tock done eating at dish 1
+<<< Tick-Tock leaves kitchen
+*** Lura done eating at dish 0
+*** Lura calls a mouse turn
+<<< Lura leaves kitchen
+>>> Mickey enters kitchen
+*** Mickey starts eating at dish 0
+    Minnie feels hungry
+>>> Minnie enters kitchen
+*** Minnie starts eating at dish 1
+    Ken feels hungry
+    Lura feels hungry
+    Tick-Tock feels hungry
+*** Mickey done eating at dish 0
+<<< Mickey leaves kitchen
+    Midge feels hungry
+*** Minnie done eating at dish 1
+*** Minnie calls a cat turn
+<<< Minnie leaves kitchen
+    Mickey feels hungry
+>>> Morris enters kitchen
+*** Morris starts eating at dish 0
+>>> Greebo enters kitchen
+*** Greebo starts eating at dish 1
+*** Greebo done eating at dish 1
+<<< Greebo leaves kitchen
+*** Morris done eating at dish 0
+*** Morris calls a mouse turn
+<<< Morris leaves kitchen
+>>> Mickey enters kitchen
+*** Mickey starts eating at dish 0
+*** Mickey done eating at dish 0
+<<< Mickey leaves kitchen
+    Greebo feels hungry
+    Morris feels hungry
+    Minnie feels hungry
+>>> Minnie enters kitchen
+*** Minnie starts eating at dish 0
+*** Minnie done eating at dish 0
+*** Minnie calls a cat turn
+<<< Minnie leaves kitchen
+>>> Ken enters kitchen
+*** Ken starts eating at dish 0
+>>> Lura enters kitchen
+*** Lura starts eating at dish 1
+    Mickey feels hungry
+*** Ken done eating at dish 0
+<<< Ken leaves kitchen
+*** Lura done eating at dish 1
+*** Lura calls a mouse turn
+<<< Lura leaves kitchen
+>>> Mickey enters kitchen
+*** Mickey starts eating at dish 0
+    Minnie feels hungry
+>>> Minnie enters kitchen
+*** Minnie starts eating at dish 1
+    Lura feels hungry
+*** Mickey done eating at dish 0
+<<< Mickey leaves kitchen
+... Mickey exiting
+*** Minnie done eating at dish 1
+*** Minnie calls a cat turn
+<<< Minnie leaves kitchen
+>>> Tick-Tock enters kitchen
+... Minnie exiting
+*** Tick-Tock starts eating at dish 0
+>>> Midge enters kitchen
+*** Midge starts eating at dish 1
+*** Tick-Tock done eating at dish 0
+<<< Tick-Tock leaves kitchen
+    Ken feels hungry
+>>> Ken enters kitchen
+*** Ken starts eating at dish 0
+*** Midge done eating at dish 1
+<<< Midge leaves kitchen
+>>> Greebo enters kitchen
+*** Greebo starts eating at dish 1
+*** Ken done eating at dish 0
+<<< Ken leaves kitchen
+*** Greebo done eating at dish 1
+<<< Greebo leaves kitchen
+>>> Lura enters kitchen
+*** Lura starts eating at dish 0
+>>> Morris enters kitchen
+*** Morris starts eating at dish 1
+*** Morris done eating at dish 1
+<<< Morris leaves kitchen
+*** Lura done eating at dish 0
+<<< Lura leaves kitchen
+    Tick-Tock feels hungry
+>>> Tick-Tock enters kitchen
+*** Tick-Tock starts eating at dish 0
+    Midge feels hungry
+    Ken feels hungry
+*** Tick-Tock done eating at dish 0
+<<< Tick-Tock leaves kitchen
+    Greebo feels hungry
+>>> Greebo enters kitchen
+*** Greebo starts eating at dish 0
+    Lura feels hungry
+    Tick-Tock feels hungry
+*** Greebo done eating at dish 0
+<<< Greebo leaves kitchen
+    Morris feels hungry
+>>> Morris enters kitchen
+*** Morris starts eating at dish 0
+*** Morris done eating at dish 0
+<<< Morris leaves kitchen
+>>> Lura enters kitchen
+*** Lura starts eating at dish 0
+*** Lura done eating at dish 0
+<<< Lura leaves kitchen
+    Morris feels hungry
+... Lura exiting
+>>> Morris enters kitchen
+*** Morris starts eating at dish 0
+*** Morris done eating at dish 0
+<<< Morris leaves kitchen
+    Greebo feels hungry
+... Morris exiting
+>>> Greebo enters kitchen
+*** Greebo starts eating at dish 0
+*** Greebo done eating at dish 0
+<<< Greebo leaves kitchen
+>>> Ken enters kitchen
+... Greebo exiting
+*** Ken starts eating at dish 0
+*** Ken done eating at dish 0
+<<< Ken leaves kitchen
+>>> Midge enters kitchen
+*** Midge starts eating at dish 0
+*** Midge done eating at dish 0
+<<< Midge leaves kitchen
+    Ken feels hungry
+>>> Ken enters kitchen
+*** Ken starts eating at dish 0
+*** Ken done eating at dish 0
+<<< Ken leaves kitchen
+    Midge feels hungry
+... Ken exiting
+>>> Midge enters kitchen
+*** Midge starts eating at dish 0
+*** Midge done eating at dish 0
+<<< Midge leaves kitchen
+>>> Tick-Tock enters kitchen
+*** Tick-Tock starts eating at dish 0
+*** Tick-Tock done eating at dish 0
+<<< Tick-Tock leaves kitchen
+... Tick-Tock exiting
+    Midge feels hungry
+>>> Midge enters kitchen
+*** Midge starts eating at dish 0
+*** Midge done eating at dish 0
+<<< Midge leaves kitchen
+... Midge exiting
+Operation took 33.755219400 seconds
+OS/161 kernel [? for menu]: ?
+
+OS/161 kernel menu
+    [?o] Operations menu                [1c] Stoplight                      
+    [?t] Tests menu                     [kh] Kernel heap stats              
+    [1a] Cat/mouse with semaphores      [q] Quit and shut down              
+    [1b] Cat/mouse with locks and CVs   
+
+Operation took 0.061916160 seconds
+OS/161 kernel [? for menu]: e q
+Shutting down.
+The system is halted.
+sys161: 1186859794 cycles (743897373k, 0u, 442962421i)
+sys161: 471249 irqs 0 exns 0r/0w disk 11r/7658w console 0r/0w/1m emufs 0r/0w net
+sys161: Elapsed real time: 47.470237 seconds (25.0022 mhz)
+sys161: Elapsed virtual time: 47.474391760 seconds (25 mhz)
+bash-4.2$ exit
+exit
+
+Script done on Wed 10 Oct 2018 10:29:45 AM CDT
