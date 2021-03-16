@@ -1,0 +1,266 @@
+Script started on Wed 10 Oct 2018 10:26:54 AM CDT
+[?1034hbash-4.2$ .s[K/sys161 kernel
+sys161: System/161 release 1.14, compiled Sep  4 2014 12:02:36
+
+OS/161 base system version 1.10
+Copyright (c) 2000, 2001, 2002, 2003
+   President and Fellows of Harvard College.  All rights reserved.
+
+Xiao Qin's system version 0 (ASST1 #7)
+Hello World!
+This is Dr. Qin's sample debug message for VM.
+
+Cpu is MIPS r2000/r3000
+1860k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+hardclock on ltimer0 (10000 hz)
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lser0 at lamebus0
+con0 at lser0
+pseudorand0 (virtual)
+
+OS/161 kernel [? for menu]: ?
+
+OS/161 kernel menu
+    [?o] Operations menu                [1c] Stoplight                      
+    [?t] Tests menu                     [kh] Kernel heap stats              
+    [1a] Cat/mouse with semaphores      [q] Quit and shut down              
+    [1b] Cat/mouse with locks and CVs   
+
+Operation took 0.061900800 seconds
+OS/161 kernel [? for menu]: 1a
+... Mickey starting
+... Ken starting
+... Midge starting
+... Minnie starting
+... Tick-Tock starting
+... Lura starting
+... Greebo starting
+... Morris starting
+    Mickey feels hungry
+    Lura feels hungry
+>>> Mickey enters kitchen
+*** Mickey starts eating at dish 0
+    Midge feels hungry
+    Minnie feels hungry
+*** Mickey done eating at dish 0
+<<< Mickey leaves kitchen
+>>> Midge enters kitchen
+>>> Lura enters kitchen
+*** Midge starts eating at dish 0
+*** Lura starts eating at dish 1
+    Ken feels hungry
+    Greebo feels hungry
+    Mickey feels hungry
+*** Lura done eating at dish 1
+    Tick-Tock feels hungry
+    Morris feels hungry
+*** Midge done eating at dish 0
+<<< Lura leaves kitchen
+<<< Midge leaves kitchen
+>>> Mickey enters kitchen
+>>> Minnie enters kitchen
+*** Mickey starts eating at dish 0
+*** Minnie starts eating at dish 1
+    Midge feels hungry
+*** Mickey done eating at dish 0
+    Lura feels hungry
+*** Minnie done eating at dish 1
+<<< Mickey leaves kitchen
+<<< Minnie leaves kitchen
+>>> Greebo enters kitchen
+>>> Ken enters kitchen
+*** Greebo starts eating at dish 0
+*** Ken starts eating at dish 1
+*** Ken done eating at dish 1
+*** Greebo done eating at dish 0
+<<< Ken leaves kitchen
+<<< Greebo leaves kitchen
+>>> Morris enters kitchen
+>>> Tick-Tock enters kitchen
+*** Morris starts eating at dish 0
+*** Tick-Tock starts eating at dish 1
+    Minnie feels hungry
+    Ken feels hungry
+*** Tick-Tock done eating at dish 1
+*** Morris done eating at dish 0
+<<< Tick-Tock leaves kitchen
+<<< Morris leaves kitchen
+>>> Minnie enters kitchen
+*** Minnie starts eating at dish 0
+    Mickey feels hungry
+    Tick-Tock feels hungry
+*** Minnie done eating at dish 0
+    Morris feels hungry
+<<< Minnie leaves kitchen
+>>> Lura enters kitchen
+>>> Midge enters kitchen
+*** Lura starts eating at dish 0
+*** Midge starts eating at dish 1
+*** Midge done eating at dish 1
+    Greebo feels hungry
+*** Lura done eating at dish 0
+<<< Midge leaves kitchen
+<<< Lura leaves kitchen
+>>> Mickey enters kitchen
+*** Mickey starts eating at dish 0
+*** Mickey done eating at dish 0
+    Midge feels hungry
+<<< Mickey leaves kitchen
+>>> Tick-Tock enters kitchen
+>>> Ken enters kitchen
+*** Tick-Tock starts eating at dish 0
+*** Ken starts eating at dish 1
+    Minnie feels hungry
+    Lura feels hungry
+*** Ken done eating at dish 1
+*** Tick-Tock done eating at dish 0
+<<< Ken leaves kitchen
+<<< Tick-Tock leaves kitchen
+>>> Minnie enters kitchen
+*** Minnie starts eating at dish 0
+*** Minnie done eating at dish 0
+<<< Minnie leaves kitchen
+>>> Morris enters kitchen
+>>> Greebo enters kitchen
+*** Morris starts eating at dish 0
+*** Greebo starts eating at dish 1
+    Mickey feels hungry
+*** Greebo done eating at dish 1
+*** Morris done eating at dish 0
+<<< Greebo leaves kitchen
+<<< Morris leaves kitchen
+>>> Mickey enters kitchen
+*** Mickey starts eating at dish 0
+    Ken feels hungry
+    Minnie feels hungry
+*** Mickey done eating at dish 0
+    Tick-Tock feels hungry
+<<< Mickey leaves kitchen
+>>> Lura enters kitchen
+>>> Midge enters kitchen
+*** Lura starts eating at dish 0
+*** Midge starts eating at dish 1
+*** Midge done eating at dish 1
+    Morris feels hungry
+*** Lura done eating at dish 0
+<<< Midge leaves kitchen
+<<< Lura leaves kitchen
+>>> Minnie enters kitchen
+*** Minnie starts eating at dish 0
+    Greebo feels hungry
+    Midge feels hungry
+*** Minnie done eating at dish 0
+<<< Minnie leaves kitchen
+>>> Tick-Tock enters kitchen
+>>> Ken enters kitchen
+*** Tick-Tock starts eating at dish 0
+*** Ken starts eating at dish 1
+    Mickey feels hungry
+*** Ken done eating at dish 1
+*** Tick-Tock done eating at dish 0
+<<< Ken leaves kitchen
+<<< Tick-Tock leaves kitchen
+>>> Mickey enters kitchen
+*** Mickey starts eating at dish 0
+    Lura feels hungry
+    Minnie feels hungry
+*** Mickey done eating at dish 0
+<<< Mickey leaves kitchen
+... Mickey exiting
+>>> Greebo enters kitchen
+>>> Morris enters kitchen
+*** Greebo starts eating at dish 0
+*** Morris starts eating at dish 1
+    Ken feels hungry
+*** Greebo done eating at dish 0
+*** Morris done eating at dish 1
+<<< Greebo leaves kitchen
+<<< Morris leaves kitchen
+>>> Minnie enters kitchen
+*** Minnie starts eating at dish 0
+    Tick-Tock feels hungry
+*** Minnie done eating at dish 0
+<<< Minnie leaves kitchen
+>>> Lura enters kitchen
+... Minnie exiting
+>>> Midge enters kitchen
+*** Lura starts eating at dish 0
+*** Midge starts eating at dish 1
+    Morris feels hungry
+*** Lura done eating at dish 0
+    Greebo feels hungry
+*** Midge done eating at dish 1
+<<< Lura leaves kitchen
+<<< Midge leaves kitchen
+>>> Tick-Tock enters kitchen
+>>> Ken enters kitchen
+*** Tick-Tock starts eating at dish 0
+*** Ken starts eating at dish 1
+    Midge feels hungry
+*** Tick-Tock done eating at dish 0
+    Lura feels hungry
+*** Ken done eating at dish 1
+<<< Tick-Tock leaves kitchen
+<<< Ken leaves kitchen
+>>> Greebo enters kitchen
+>>> Morris enters kitchen
+*** Greebo starts eating at dish 0
+*** Morris starts eating at dish 1
+    Ken feels hungry
+*** Greebo done eating at dish 0
+    Tick-Tock feels hungry
+*** Morris done eating at dish 1
+<<< Greebo leaves kitchen
+<<< Morris leaves kitchen
+>>> Lura enters kitchen
+>>> Midge enters kitchen
+*** Lura starts eating at dish 0
+*** Midge starts eating at dish 1
+    Morris feels hungry
+*** Lura done eating at dish 0
+    Greebo feels hungry
+*** Midge done eating at dish 1
+<<< Lura leaves kitchen
+<<< Midge leaves kitchen
+... Lura exiting
+... Midge exiting
+>>> Tick-Tock enters kitchen
+>>> Ken enters kitchen
+*** Tick-Tock starts eating at dish 0
+*** Ken starts eating at dish 1
+*** Ken done eating at dish 1
+*** Tick-Tock done eating at dish 0
+<<< Ken leaves kitchen
+<<< Tick-Tock leaves kitchen
+... Ken exiting
+>>> Morris enters kitchen
+>>> Greebo enters kitchen
+... Tick-Tock exiting
+*** Morris starts eating at dish 0
+*** Greebo starts eating at dish 1
+*** Greebo done eating at dish 1
+*** Morris done eating at dish 0
+<<< Greebo leaves kitchen
+<<< Morris leaves kitchen
+... Greebo exiting
+... Morris exiting
+Operation took 24.947206280 seconds
+OS/161 kernel [? for menu]: q
+Shutting down.
+The system is halted.
+sys161: 879578105 cycles (555846407k, 0u, 323731698i)
+sys161: 348966 irqs 0 exns 0r/0w disk 7r/7042w console 0r/0w/1m emufs 0r/0w net
+sys161: Elapsed real time: 35.182518 seconds (25.0004 mhz)
+sys161: Elapsed virtual time: 35.183124200 seconds (25 mhz)
+bash-4.2$ exit
+exit
+
+Script done on Wed 10 Oct 2018 10:28:24 AM CDT
